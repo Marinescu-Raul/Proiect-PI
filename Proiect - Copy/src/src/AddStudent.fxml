@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddStudent">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="173.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="199.0" text="Numele: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="42.0" prefWidth="199.0" style="-fx-background-color: #87CEFA;" text="Prenumele: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="199.0" text="Data nasterii: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="199.0" text="Selectati facultatea: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="192.0" prefHeight="45.0" prefWidth="199.0" text="Selectati specializarea: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="199.0" text="Vartsa: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="199.0" text="Anul: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="199.0" text="Grupa: " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="434.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="vartsa" layoutX="14.0" layoutY="236.0" prefHeight="31.0" prefWidth="149.0" promptText="vartsa" />
+            <TextField fx:id="nume" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="149.0" promptText="nume" />
+            <TextField fx:id="prenume" layoutX="14.0" layoutY="55.0" prefHeight="31.0" prefWidth="149.0" promptText="prenume" />
+            <TextField fx:id="an" layoutX="14.0" layoutY="279.0" prefHeight="31.0" prefWidth="149.0" promptText="anul de studiu" />
+            <TextField fx:id="grupa" layoutX="14.0" layoutY="324.0" prefHeight="31.0" prefWidth="149.0" promptText="grupa" />
+            <Button fx:id="addStud" layoutX="254.0" layoutY="319.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="41.0" prefWidth="81.0" text="Adauga">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="facultate" layoutX="14.0" layoutY="145.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="specializare" layoutX="14.0" layoutY="188.0" prefWidth="150.0" />
+            <DatePicker fx:id="data" layoutX="15.0" layoutY="101.0" onAction="#getData" prefHeight="21.0" prefWidth="148.0" promptText="data nasterii" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
