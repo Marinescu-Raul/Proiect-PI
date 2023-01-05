@@ -1,0 +1,36 @@
+.sbutton{
+	
+	-fx-background-color: #E8A87C;
+	-fx-background-radius : 30 0 0 30;
+	
+}
+.sbutton:hover{
+	-fx-background-color: #E27D60;
+	-fx-background-radius : 30 0 0 30;
+	
+}
+
+.sbutton:pressed{
+	-fx-background-color : #E8A87C;
+	-fx-background-radius : 30 0 0 30;
+}
+
+
+
+.nbutton{
+	-fx-background-radius: 15px;
+	-fx-background-color: #E27D60;
+}
+
+.nbutton:hover{
+	-fx-background-radius: 15px;
+	-fx-background-color: #E8A87C;
+	
+	
+}
+
+.nbutton:pressed{
+	-fx-background-radius: 15px;
+	-fx-background-color: #E27D60;
+}
+
