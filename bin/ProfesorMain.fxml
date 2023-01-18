@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="551.0" prefWidth="754.0" style="-fx-background-color: #b6e1e0;" stylesheets="@sideButtons.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfesorMain">
+   <children>
+      <AnchorPane prefHeight="551.0" prefWidth="138.0">
+         <children>
+            <VBox layoutX="-1.0" layoutY="-2.0" prefHeight="551.0" prefWidth="151.0" style="-fx-background-color: #C38D9E;">
+               <children>
+                  <Button fx:id="addTema" mnemonicParsing="false" onAction="#adaugaT" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Adauga tema">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addNota" mnemonicParsing="false" onAction="#adaugaN" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Adauga nota">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="schimbaParola" mnemonicParsing="false" onAction="#schimbaP" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Schimba parola">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tpred" mnemonicParsing="false" onAction="#temePred" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Teme predate">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="trmmail" layoutX="10.0" layoutY="233.0" mnemonicParsing="false" onAction="#trmEmail" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Trimite mail">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="planif_exam" layoutX="10.0" layoutY="316.0" mnemonicParsing="false" onAction="#planificexam" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Planifica examen">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="examenePredate" layoutX="10.0" layoutY="399.0" mnemonicParsing="false" onAction="#ExamPred" prefHeight="73.0" prefWidth="151.0" styleClass="sbutton" text="Examene predate">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logOut" layoutX="271.0" layoutY="441.0" mnemonicParsing="false" onAction="#logout" prefHeight="39.0" prefWidth="87.0" styleClass="nbutton" text="Log Out" />
+      <Label layoutX="212.0" layoutY="85.0" prefHeight="29.0" prefWidth="103.0" text="Cauta dupa nume:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fil" layoutX="324.0" layoutY="87.0" prefHeight="25.0" prefWidth="110.0" promptText="nume" style="-fx-background-color: #E1F5F4;" />
+      <Button fx:id="cauta" layoutX="446.0" layoutY="85.0" mnemonicParsing="false" onAction="#search" prefHeight="29.0" prefWidth="63.0" styleClass="nbutton" text="Cauta" />
+      <TableView fx:id="tableView" layoutX="181.0" layoutY="149.0" prefHeight="252.0" prefWidth="544.0" style="-fx-background-color: #E1F5F4;" stylesheets="@sideButtons.css">
+        <columns>
+          <TableColumn fx:id="ID" minWidth="0.0" prefWidth="0.0" text="ID" />
+          <TableColumn fx:id="nume" prefWidth="79.99992370605469" text="nume" />
+            <TableColumn fx:id="prenume" prefWidth="92.0" text="prenume" />
+            <TableColumn fx:id="email" prefWidth="219.99996948242188" text="email" />
+            <TableColumn fx:id="anStudiu" prefWidth="26.0" text="an" />
+            <TableColumn fx:id="grupa" prefWidth="60.6666259765625" text="grupa" />
+            <TableColumn fx:id="medie" prefWidth="60.66668701171875" text="medie" />
+            <TableColumn fx:id="facultate" prefWidth="13.3333740234375" text="facultate" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelFac" alignment="CENTER" layoutX="513.0" layoutY="14.0" opacity="0.67" prefHeight="29.0" prefWidth="227.0" text="Label" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #b6e1e0;" stylesheets="@sideButtons.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentMain">
+   <children>
+      <AnchorPane layoutX="476.0" prefHeight="400.0" prefWidth="123.0">
+         <children>
+            <TableView fx:id="tableViewExamen" layoutX="-9.0" layoutY="41.0" prefHeight="289.0" prefWidth="123.0" style="-fx-background-color: #E1F5F4;">
+              <columns>
+                <TableColumn fx:id="numeE" prefWidth="122.0000508626302" text="Examene" />
+              </columns>
+            </TableView>
+            <Label fx:id="labelFac" alignment="CENTER" contentDisplay="CENTER" layoutX="-114.0" layoutY="6.0" opacity="0.67" prefHeight="25.0" prefWidth="233.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="98.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="141.0" style="-fx-background-color: #C38D9E;">
+               <children>
+                  <Button fx:id="vizNote" mnemonicParsing="false" onAction="#viznote" prefHeight="63.0" prefWidth="141.0" styleClass="sbutton" text="Vizualizare note">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="incarcareTema" mnemonicParsing="false" onAction="#incTema" prefHeight="63.0" prefWidth="145.0" styleClass="sbutton" text="Incarcare tema">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="schimbaParola" mnemonicParsing="false" onAction="#schimbaP" prefHeight="63.0" prefWidth="142.0" styleClass="sbutton" text="Schimba parola">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="trmmail" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#trmEmail" prefHeight="63.0" prefWidth="141.0" styleClass="sbutton" text="Trimite mail">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="incarcareExamen" layoutX="10.0" layoutY="73.0" mnemonicParsing="false" onAction="#incExam" prefHeight="63.0" prefWidth="145.0" styleClass="sbutton" text="Examen">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logOut" layoutX="224.0" layoutY="331.0" mnemonicParsing="false" onAction="#logout" prefHeight="37.0" prefWidth="75.0" styleClass="nbutton" stylesheets="@sideButtons.css" text="Log Out" />
+      <TableView fx:id="tableViewTema" layoutX="337.0" layoutY="41.0" prefHeight="289.0" prefWidth="123.0" style="-fx-background-color: #E1F5F4;">
+        <columns>
+          <TableColumn fx:id="nume" prefWidth="121.99993896484375" text="Teme" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

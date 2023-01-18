@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #b6e1e0;" stylesheets="@sideButtons.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ArhivaStudenti">
+   <children>
+      <Button fx:id="back" layoutX="265.0" layoutY="324.0" mnemonicParsing="false" onAction="#merginapoi" prefHeight="35.0" prefWidth="75.0" styleClass="nbutton" text="Inapoi" />
+      <TableView fx:id="tableView" layoutX="35.0" layoutY="33.0" prefHeight="291.0" prefWidth="536.0">
+        <columns>
+          <TableColumn fx:id="nume" prefWidth="68.66662216186523" text="nume" />
+          <TableColumn fx:id="prenume" prefWidth="68.00000762939453" text="prenume" />
+            <TableColumn fx:id="email" prefWidth="131.99998474121094" text="email" />
+            <TableColumn fx:id="facultate" prefWidth="130.66668701171875" text="facultate" />
+            <TableColumn fx:id="medie" prefWidth="49.333251953125" text="medie" />
+            <TableColumn fx:id="dataNasterii" prefWidth="84.66671752929688" text="dataNasterii" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

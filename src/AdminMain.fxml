@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminMain">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #b6e1e0;" stylesheets="@sideButtons.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="logout" layoutX="300.0" layoutY="333.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="33.0" prefWidth="85.0" style="-fx-background-radius: 15;" styleClass="nbutton" stylesheets="@sideButtons.css" text="Log Out" />
+            <VBox layoutY="1.0" prefHeight="400.0" prefWidth="181.0" style="-fx-background-color: #C38D9E;">
+               <children>
+                  <Button fx:id="addStud" mnemonicParsing="false" onAction="#addStudent" prefHeight="57.0" prefWidth="181.0" styleClass="sbutton" stylesheets="@sideButtons.css" text="Adauga student">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addProf" mnemonicParsing="false" onAction="#addProfesor" prefHeight="57.0" prefWidth="181.0" styleClass="sbutton" stylesheets="@sideButtons.css" text="Adauga profesor">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteStud" mnemonicParsing="false" onAction="#deleteStudent" prefHeight="57.0" prefWidth="181.0" styleClass="sbutton" stylesheets="@sideButtons.css" text="Elimina student">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deteleProf" mnemonicParsing="false" onAction="#deleteProfesor" prefHeight="57.0" prefWidth="181.0" styleClass="sbutton" stylesheets="@sideButtons.css" text="Elimina profesor">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="arhStud" layoutX="10.0" layoutY="182.0" mnemonicParsing="false" onAction="#arhivaStudenti" prefHeight="57.0" prefWidth="181.0" styleClass="sbutton" stylesheets="@sideButtons.css" text="Arhiva Studenti">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="arhprof" layoutX="10.0" layoutY="239.0" mnemonicParsing="false" onAction="#arhivaProfesori" prefHeight="57.0" prefWidth="181.0" styleClass="sbutton" stylesheets="@sideButtons.css" text="Arhiva Profesori">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
